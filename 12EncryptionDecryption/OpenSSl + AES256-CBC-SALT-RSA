@@ -1,0 +1,34 @@
+OpenSSL
+OpenSSL is a robust, full-featured open-source toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, 
+along with a full-strength general-purpose cryptography library.
+It's widely used for securing communications over computer networks and for various cryptographic operations.
+
+
+AES-256-CBC:
+
+AES: Advanced Encryption Standard, a symmetric encryption algorithm widely used across the globe.
+256: Refers to the key size – 256 bits, offering a high level of security.
+CBC: Cipher Block Chaining, a mode of operation for block ciphers. 
+It means each block of plaintext is XORed with the previous ciphertext block before being encrypted. 
+This way, each ciphertext block depends on all plaintext blocks processed up to that point, enhancing security.
+
+
+Salt in Encryption:
+A "salt" is a random data that is used as an additional input to a one-way function that hashes data, a password, or passphrase.
+Salts are used to safeguard passwords in storage. In the context of OpenSSL's encryption, it adds an extra layer of security.
+When you encrypt a file with OpenSSL using a password, the salt ensures that even if two files are encrypted with the same password, 
+the encrypted files will be different, due to the use of different salt values.
+
+
+RSA (Rivest-Shamir-Adleman)
+RSA is one of the first public-key cryptosystems and is widely used for secure data transmission.
+It's named after its inventors, Ron Rivest, Adi Shamir, and Leonard Adleman, 
+who first publicly described it in 1977. 
+
+
+Here's a brief overview of how RSA works:
+Key Generation:
+
+RSA involves a pair of keys: a public key and a private key.
+The public key can be shared with anyone and is used for encrypting data.
+The private key is kept secret and is used for decrypting data.
